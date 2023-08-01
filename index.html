@@ -39,7 +39,6 @@
         text-decoration: none;
         font-size: 18px;
         font-weight: bold;
-        text-transform: uppercase;
         letter-spacing: 2px;
         position: relative;
       }
@@ -48,9 +47,12 @@
         text-shadow: 0 0 10px #ff00ff;
       }
 
-      a + a {
-        margin-left: 10px;
-        margin-bottom: 10px;
+      section > section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 4px;
       }
 
       @media only screen and (max-width: 600px) {
@@ -87,27 +89,25 @@
         (╯°□°）╯︵ ┻━┻
       </p>
 
-      <div
-        style="
-          margin: 20px;
-          text-align: center;
-          max-width: 500px;
-          margin: 0 auto;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        "
-      >
-        <a href="https://github.com/f-person">github</a>
-        <a href="https://blog.fperson.dev">blog</a>
-        <a href="https://scribbles.fperson.dev">drawings</a>
-        <a href="https://fosstodon.org/@fperson" rel="me">mastodon</a>
-        <a href="https://youtube.com/@f-person">youtube</a>
-        <a href="https://www.criticker.com/profile/fperson">cartoon reviews</a>
-      </div>
+      <section>
+        <section>
+          <a href="https://github.com/f-person">github</a>
+          <a href="https://blog.fperson.dev">blog</a>
+          <a href="https://scribbles.fperson.dev">drawings</a>
+        </section>
+        <section>
+          <a href="https://youtube.com/@f-person">youtube</a>
+          <a href="https://twitter.com/_fperson">twitter</a>
+          <a href="https://fosstodon.org/@fperson" rel="me">mastodon</a>
+        </section>
+        <section>
+          <a href="https://criticker.com/profile/fperson">cartoon reviews</a>
+          <a href="https://www.goodreads.com/user/show/121709171-arshak">book reviews</a>
+        </section>
+      </section>
 
-      <div style="margin: 20px; text-align: center; word-wrap: break-word">
-        <a href="https://getsession.org">Session ID</a>
+      <div style="margin: 20px 0; text-align: center; word-wrap: break-word">
+        <a href="https://getsession.org">session id</a>
 
         <br />
         05d9d735177901a8e47b62a8e3be021f6c7bc821cc8d6d1d8a89edb0ba52965a6d
